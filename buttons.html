@@ -11,11 +11,27 @@
     width: 110px;
     cursor: pointer;
     margin-right: 8px;
+
+    /* first value is choosing which css property to apply the transition */
+    /* second value is choosing the duration of the transition */
+    /* use commas to separate multiple properties */
+    /* always put the transition in the base css selector instead of pseudo classes */
+    transition: opacity 0.15s;
+  }
+
+  /* pseudo class (:) */
+  /* add extra styles based on a specific condition */
+  .subscribe-button:hover {
+    opacity: 0.7;
+  }
+
+  .subscribe-button:active {
+    opacity: 0.5;
   }
 
   .join-button {
     background-color: white;
-    color:rgb(41, 118, 211);
+    color: rgb(41, 118, 211);
     border-color: rgb(41, 118, 211);
     border-style: solid;
     border-width: 1px;
@@ -24,6 +40,16 @@
     width: 63px;
     cursor: pointer;
     margin-right: 8px;
+    transition: background-color 0.15s, color 0.15s;
+  }
+
+  .join-button:hover {
+    background-color: rgb(41, 118, 211);
+    color: white;
+  }
+
+  .join-button:active {
+    opacity: 0.5;
   }
 
   .tweet-button {
@@ -36,6 +62,13 @@
     cursor: pointer;
     font-weight: bold;
     font-size: 15px;
+    transition: box-shadow 0.15s;
+  }
+
+  .tweet-button:hover {
+    /* first value is the horizontal position, second is the vertical position */
+    /* third is the blur value, fourth is the color of the shadow */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
   }
 </style>
 
