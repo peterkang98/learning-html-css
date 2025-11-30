@@ -1,0 +1,35 @@
+* {
+  font-family: Arial;
+  color: rgb(100, 100, 100);
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+input {
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 8px;
+  padding: 10px 10px 10px 10px;
+}
+
+.first-name, .last-name {
+  width: 137px;
+}
+
+.email {
+  width: 300px;
+  display: block;
+}
+
+.signup-button {
+  color:white;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: cornflowerblue;
+  border: none;
+  padding: 15px 133px 15px 133px;
+  border-radius: 10px;
+}
+
