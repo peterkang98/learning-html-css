@@ -1,0 +1,32 @@
+* {
+  font-family: Arial, serif;
+}
+
+.container {
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(200, 200, 200);
+  width: 300px;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px 0 12px;
+}
+
+p {
+  margin: 8px 0 8px 0;
+}
+
+.number {
+  font-weight: bold;
+  color: white;
+  background-color: rgb(49, 109, 245);
+  padding: 3px 10px 3px 10px;
+  border-radius: 20px;
+}
+

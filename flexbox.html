@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Practice</title>
+</head>
+<body style="padding-bottom: 1000px;">
+<!--  inside flex, divs go from block -> inline block  -->
+<!--  child elements only take up as much horizontal space as they need to  -->
+<!-- flexbox is useful when the number of child elements change from time to time -->
+  <div style="display: flex; flex-direction: row;">
+    <!-- flexbox is stretching both child <div>s so their heights match.-->
+    <div style="background-color: lightblue">div1 text</div>
+    <div style="background-color: lightpink">div2 <p>text</p></div>
+  </div>
+
+<!--  flex: value; => take up the remaining space (similar to grid fr)-->
+  <div style="display: flex; flex-direction: row; margin-top:30px;">
+    <div style="background-color: lightblue; width:100px">100px</div>
+    <div style="background-color: lightpink; flex: 1">flex: 1</div>
+  </div>
+
+  <div style="display: flex; flex-direction: row; margin-top:30px;">
+    <div style="background-color: lightblue; flex: 1">flex: 1</div>
+    <div style="background-color: lightpink; width:100px">100px</div>
+    <div style="background-color: lightblue; flex: 2">flex: 2</div>
+  </div>
+
+  <div style="
+  display: flex;
+  flex-direction: row;
+  /*justify-content: how are the child elements aligned horizontally*/
+  /*by default the child elements are aligned to the left*/
+  /*justify-content: start(default), center, end;*/
+  justify-content: end;
+
+  margin-top:30px;
+  height: 70px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+
+  ">
+    <div style="background-color: lightblue; width:100px;">100px</div>
+    <div style="background-color: lightpink; width:100px">100px</div>
+    <div style="background-color: lightblue; width:100px;">100px</div>
+  </div>
+
+  <div style="
+    display: flex;
+    flex-direction: row;
+    /* equal space between each child element*/
+    justify-content: space-between;
+    /*align-items: how are the elements aligned vertically*/
+    /*default is stretch: elements are stretching vertically to fill up the space*/
+    /*align-items: start; elements only take up as much vertical space as they need to, and they are aligned to the very top*/
+    align-items: end;
+
+    margin-top:30px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+
+    ">
+    <div style="background-color: lightblue; width:100px;">100px</div>
+    <div style="background-color: lightpink; width:100px">100px</div>
+    <div style="background-color: lightblue; width:100px;">100px</div>
+  </div>
+</body>
+</html>

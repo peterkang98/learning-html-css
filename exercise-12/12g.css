@@ -1,0 +1,52 @@
+* {
+  font-family: Arial, serif;
+}
+
+p {
+  margin: 0;
+}
+
+
+.container {
+  width: 350px;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 12px 0 12px;
+  height: 80px;
+}
+
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.middle {
+  flex: 1;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.gray-text {
+  color: #9e9e9e;
+  margin-top: 4px;
+}
+
+.follow-button {
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 7px;
+  border: none;
+  padding: 10px 10px 10px 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
