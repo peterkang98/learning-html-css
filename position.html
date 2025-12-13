@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Position Practice</title>
+</head>
+<body style="
+height: 3000px;
+padding-top: 60px;
+padding-left: 60px;
+">
+  <!-- position:fixed makes it float on top of other elements-->
+  <div style="
+  background-color: black;
+  color:white;
+  position: fixed;
+  /*how far away the element is from the top/left/right/bottom of the window*/
+  /*if opposite directions are set together the element will stretch*/
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  ">
+    header
+  </div>
+  <div style="
+  background-color: green;
+  color:white;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  ">sidebar</div>
+  <!--  default = position:static;-->
+  <div style="
+      background-color: lightblue;
+      height: 200px;
+      width: 200px;
+      position: static;
+      ">
+    div 1
+  </div>
+  <div style="
+      background-color: lightpink;
+      height: 200px;
+      width: 200px;
+      ">
+    div 2
+  </div>
+</body>
+</html>
