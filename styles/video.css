@@ -3,7 +3,7 @@
 }
 
 .thumbnail-row {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   position: relative;
 }
 
@@ -13,8 +13,8 @@
 
 .video-info-grid {
   display: grid;
-  grid-template-columns: 50px 1fr;
-  column-gap: 15px;
+  grid-template-columns: 36px 1fr;
+  column-gap: 10px;
 }
 
 /* divs by default have a width of 100% */
@@ -43,7 +43,7 @@
   font-weight: 600;
   line-height: 20px;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .video-uploader, .video-stats {
