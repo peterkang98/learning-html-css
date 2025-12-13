@@ -1,0 +1,19 @@
+.shirt {
+  position:relative;
+  display: inline-block;
+}
+
+.shirt-img {
+  width: 200px;
+}
+
+.sale {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  background-color: black;
+  color: white;
+  font-family: Arial, serif;
+  padding: 5px 10px;
+  font-size: 12px;
+}
