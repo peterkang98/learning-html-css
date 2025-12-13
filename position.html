@@ -10,6 +10,8 @@ padding-top: 60px;
 padding-left: 60px;
 ">
   <!-- position:fixed makes it float on top of other elements-->
+  <!-- fixed = location is fixed on the browser window, not fixed to the page itself-->
+  <!-- which means when you scroll the page you can still see it-->
   <div style="
   background-color: black;
   color:white;
@@ -20,6 +22,7 @@ padding-left: 60px;
   left: 0;
   right: 0;
   height: 60px;
+  z-index: 1;
   ">
     header
   </div>
@@ -31,7 +34,35 @@ padding-left: 60px;
   left: 0;
   bottom: 0;
   width: 60px;
-  ">sidebar</div>
+  ">
+<!-- when an absolute element is placed inside a fixed/relative element,
+it is placed relative to the fixed/relative element-->
+    sidebar
+    <div style="
+    position:absolute;
+    background-color: red;
+    color:white;
+    right: 0;
+    top: 0;
+    ">
+      X
+    </div>
+  </div>
+
+  <!--  absolute means its location is fixed to the page not the browser window-->
+  <!--  which means it moves when you scroll the page-->
+  <!--  used when you need to place an element on a precise location on a page-->
+  <div style="
+  position:absolute;
+  background-color: red;
+  color:white;
+  right: 10px;
+  top: 100px;
+  ">
+    absolute
+  </div>
+
+
   <!--  default = position:static;-->
   <div style="
       background-color: lightblue;
@@ -45,8 +76,18 @@ padding-left: 60px;
       background-color: lightpink;
       height: 200px;
       width: 200px;
+      position: relative;
       ">
     div 2
+    <div style="
+    position:absolute;
+    background-color: black;
+    color:white;
+    right: 10px;
+    bottom: 10px;
+    ">
+      5:00
+    </div>
   </div>
 </body>
 </html>
