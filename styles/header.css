@@ -43,9 +43,9 @@
 .search-bar {
   flex: 1;
   height: 36px;
-  border-width: 1px;
-  border-color: #c5c5c5;
-  border-style: solid;
+
+  /* width, style, color */
+  border: 1px solid #c5c5c5;
   padding-left: 10px;
   font-size: 16px;
   border-top-left-radius: 2px;
@@ -57,7 +57,6 @@
 }
 
 .search-bar::placeholder {
-  font-family: Roboto, serif;
   font-size: 16px;
 }
 
@@ -93,8 +92,6 @@
 .search-button .tooltip,
 .voice-search-button .tooltip,
 .upload-icon-container .tooltip{
-  font-family: Roboto, serif;
-
   position: absolute;
   bottom: -30px;
 
@@ -159,7 +156,6 @@
   right: -5px;
   background-color: #c80000;
   color: white;
-  font-family: Roboto, serif;
   font-size: 11px;
   padding: 2px 6px;
   border-radius: 50%;
